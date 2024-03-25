@@ -23,7 +23,7 @@ function Register() {
     if (name && email && profession && password && password === repassword) {
       let res;
       try {
-        res = await axios.post("http://localhost:5000/api/users", user);
+        res = await axios.post("https://akova-backend.vercel.app/api/users", user);
         // console.log(res.data);
         localStorage.setItem("token", res.data.token);
         localStorage.setItem("profession", res.data.profession);
