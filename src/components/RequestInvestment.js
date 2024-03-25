@@ -70,7 +70,7 @@ function RequestInvestment() {
     ) {
       let res;
       try {
-        res = await axios.post("http://localhost:5000/api/invest", problem, {
+        res = await axios.post("https://akova-backend.vercel.app/api/invest", problem, {
           headers: headers,
         });
         // console.log(res);
