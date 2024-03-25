@@ -13,6 +13,7 @@ function ProfileStudent() {
     setPassword(e.target.value);
   };
   const sumbitPassword = async (e) => {
+    if(password.length>=8){
     try {
       const headers = {
         "Content-Type": "application/json",
@@ -33,6 +34,11 @@ function ProfileStudent() {
       }
     } catch (err) {
       window.alert(err.data.msg);
+    }
+    }
+    else{
+      window.alert("The password should be minimum of 8 characters");
+      window.location.reload();
     }
   };
   useEffect(() => {
