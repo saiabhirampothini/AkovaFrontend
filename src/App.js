@@ -38,7 +38,7 @@ function App() {
             "Content-Type": "application/json",
             "x-auth-token": localStorage.getItem("token"),
           };
-          await axios.get("http://localhost:5000/api/auth", {
+          await axios.get("https://akova-backend.vercel.app/api/auth", {
             headers: headers,
           });
         } catch (err) {
