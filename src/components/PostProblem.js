@@ -66,7 +66,7 @@ function PostProblem() {
       let res;
       try {
         res = await axios.post(
-          "http://localhost:5000/api/postproblem",
+          "https://akova-backend.vercel.app/api/postproblem",
           problem,
           { headers: headers }
         );
