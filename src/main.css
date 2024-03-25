@@ -1,0 +1,31 @@
+.main-bg {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.quote {
+  font-style: italic;
+}
+
+.intro {
+  background-color: #e0e0e0;
+  padding: 20px;
+}
+
+.student-home,
+.entrepreneur-home,
+.investor-home,
+.aboutus-home {
+  background-color: #fafafa;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.student-home h2,
+.entrepreneur-home h2,
+.investor-home h2,
+.aboutus-home h2 {
+  color: #333;
+}
+
+/* Add more custom styles as needed */
