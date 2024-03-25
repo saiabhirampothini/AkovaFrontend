@@ -24,7 +24,7 @@ function Register() {
       let res;
       try {
         res = await axios.post("https://akova-backend.vercel.app/api/users", user);
-        console.log(res.data);
+        // console.log(res.data);
         localStorage.setItem("token", res.data.token);
         localStorage.setItem("profession", res.data.profession);
         if (localStorage.getItem("profession") === "Student") {
