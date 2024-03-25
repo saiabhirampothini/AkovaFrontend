@@ -124,6 +124,7 @@ function Register() {
                               value={user.profession}
                               className="registration-input custom-select"
                             >
+                                <option>Your Profession</option>
                               <option value="Student">Student</option>
                               <option value="Enterprenuer">Enterprenuer</option>
                               <option value="Investor">Investor</option>
