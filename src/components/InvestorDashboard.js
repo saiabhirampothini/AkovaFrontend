@@ -14,7 +14,7 @@ function InvestorDashboard() {
           "x-auth-token": localStorage.getItem("token"),
         };
         let problemsList = await axios.get(
-          "http://localhost:5000/api/invest/projects",
+          "https://akova-backend.vercel.app/api/invest/projects",
           {
             headers: headers,
           }
