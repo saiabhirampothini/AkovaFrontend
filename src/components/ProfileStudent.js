@@ -20,7 +20,7 @@ function ProfileStudent() {
       };
       const newPassowrd = { password };
       let res = await axios.put(
-        "http://localhost:5000/api/users/change",
+        "https://akova-backend.vercel.app/api/users/change",
         newPassowrd,
         {
           headers: headers,
@@ -42,7 +42,7 @@ function ProfileStudent() {
           "Content-Type": "application/json",
           "x-auth-token": localStorage.getItem("token"),
         };
-        let res = await axios.get("http://localhost:5000/api/auth/profile", {
+        let res = await axios.get("https://akova-backend.vercel.app/api/auth/profile", {
           headers: headers,
         });
         if (res) {
