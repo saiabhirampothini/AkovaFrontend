@@ -17,7 +17,7 @@ function StudentIdeas() {
         };
 
         let ideaVar = await axios.get(
-          "http://localhost:5000/api/idea/getidea/me",
+          "https://akova-backend.vercel.app/api/idea/getidea/me",
           {
             headers: headers,
           }
@@ -27,7 +27,7 @@ function StudentIdeas() {
           // console.log(ideaVar.data[i].problem.user);
           if (ideaVar.data[i].status === "approve") {
             let userX = await axios.get(
-              `http://localhost:5000/api/auth/getEnterprenuer/${ideaVar.data[i].problem.user}`,
+              `https://akova-backend.vercel.app/api/auth/getEnterprenuer/${ideaVar.data[i].problem.user}`,
               { headers: headers }
             );
             // console.log(userX);
