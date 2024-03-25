@@ -13,6 +13,7 @@ function ProfileInvestor() {
     setPassword(e.target.value);
   };
   const sumbitPassword = async (e) => {
+    if(password.length>=8){
     try {
       const headers = {
         "Content-Type": "application/json",
@@ -33,6 +34,11 @@ function ProfileInvestor() {
       }
     } catch (err) {
       window.alert(err.data.msg);
+    }
+    }
+    else{
+      window.alert("Password length should be atleast 8");
+      window.location.reload();
     }
   };
   useEffect(() => {
