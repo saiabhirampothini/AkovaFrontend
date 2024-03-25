@@ -14,7 +14,7 @@ function Enterprenuer() {
           "x-auth-token": localStorage.getItem("token"),
         };
         let problemsList = await axios.get(
-          "http://localhost:5000/api/getposts/me",
+          "https://akova-backend.vercel.app/api/getposts/me",
           {
             headers: headers,
           }
