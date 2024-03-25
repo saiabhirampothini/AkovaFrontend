@@ -16,7 +16,7 @@ function InvestmentRequestStatus() {
         };
 
         let int = await axios.get(
-          "http://localhost:5000/api/invest/enterprenuer",
+          "https://akova-backend.vercel.app/api/invest/enterprenuer",
           {
             headers: headers,
           }
@@ -25,7 +25,7 @@ function InvestmentRequestStatus() {
           for (let i = 0; i < int.data.length; i++) {
             // console.log(int.data[i]._id);
             let investors = await axios.get(
-              `http://localhost:5000/api/invest/enterprenuer/investor/${int.data[i]._id}`,
+              `https://akova-backend.vercel.app/api/invest/enterprenuer/investor/${int.data[i]._id}`,
               { headers: headers }
             );
             int.data[i].investors = investors;
