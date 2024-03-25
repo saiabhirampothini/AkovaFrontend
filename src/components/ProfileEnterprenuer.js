@@ -12,6 +12,7 @@ function ProfileEnterprenuer() {
     setPassword(e.target.value);
   };
   const sumbitPassword = async (e) => {
+    if(password.length>=8){
     try {
       const headers = {
         "Content-Type": "application/json",
@@ -32,6 +33,11 @@ function ProfileEnterprenuer() {
       }
     } catch (err) {
       window.alert(err.data.msg);
+    }
+    }
+    else{
+      window.alert("Password should be minimum of 8 characters");
+      window.location.reload();
     }
   };
   useEffect(() => {
