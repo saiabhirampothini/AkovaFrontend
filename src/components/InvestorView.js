@@ -20,7 +20,7 @@ function InvestorView() {
           "x-auth-token": localStorage.getItem("token"),
         };
         let problemsList = await axios.get(
-          `http://localhost:5000/api/invest/${id}`,
+          `https://akova-backend.vercel.app/api/invest/${id}`,
           {
             headers: headers,
           }
@@ -39,7 +39,7 @@ function InvestorView() {
           "x-auth-token": localStorage.getItem("token"),
         };
         let invest = await axios.get(
-          `http://localhost:5000/api/invest/status/${id}`,
+          `https://akova-backend.vercel.app/api/invest/status/${id}`,
           {
             headers: headers,
           }
@@ -62,7 +62,7 @@ function InvestorView() {
       };
       const data = { interest: true };
       let res = await axios.put(
-        `http://localhost:5000/api/invest/${id}`,
+        `https://akova-backend.vercel.app/api/invest/${id}`,
         data,
         {
           headers: headers,
