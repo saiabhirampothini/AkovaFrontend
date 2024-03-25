@@ -25,7 +25,7 @@ function SubmitIdea() {
           "x-auth-token": localStorage.getItem("token"),
         };
         let problemx = await axios.get(
-          `http://localhost:5000/api/getposts/post/${id}`,
+          `https://akova-backend.vercel.app/api/getposts/post/${id}`,
           {
             headers: headers,
           }
@@ -58,7 +58,7 @@ function SubmitIdea() {
           "Content-Type": "application/json",
           "x-auth-token": localStorage.getItem("token"),
         };
-        res = await axios.post(`http://localhost:5000/api/idea/${id}`, state, {
+        res = await axios.post(`https://akova-backend.vercel.app/api/idea/${id}`, state, {
           headers: headers,
         });
         // console.log(res);
