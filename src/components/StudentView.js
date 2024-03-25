@@ -18,7 +18,7 @@ function StudentView() {
           "x-auth-token": localStorage.getItem("token"),
         };
         let problemsList = await axios.get(
-          `http://localhost:5000/api/getposts/post/${id}`,
+          `https://akova-backend.vercel.app/api/getposts/post/${id}`,
           {
             headers: headers,
           }
