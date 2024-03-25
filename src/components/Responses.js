@@ -21,7 +21,7 @@ function Responses() {
           "x-auth-token": localStorage.getItem("token"),
         };
         let problemsList = await axios.get(
-          `http://localhost:5000/api/getposts/post/${id}`,
+          `https://akova-backend.vercel.app/api/getposts/post/${id}`,
           {
             headers: headers,
           }
@@ -41,7 +41,7 @@ function Responses() {
           "x-auth-token": localStorage.getItem("token"),
         };
         let ideasList = await axios.get(
-          `http://localhost:5000/api/idea/getideas/${id}`,
+          `https://akova-backend.vercel.app/api/idea/getideas/${id}`,
           {
             headers: headers,
           }
@@ -66,7 +66,7 @@ function Responses() {
         "x-auth-token": localStorage.getItem("token"),
       };
       let res = await axios.put(
-        `http://localhost:5000/api/idea/update/${ideaUpdate._id}`,
+        `https://akova-backend.vercel.app/api/idea/update/${ideaUpdate._id}`,
         ideaUpdate,
         {
           headers: headers,
@@ -90,7 +90,7 @@ function Responses() {
       };
       // console.log(ideaUpdate._id);
       let res = await axios.put(
-        `http://localhost:5000/api/idea/update/${ideaUpdate._id}`,
+        `https://akova-backend.vercel.app/api/idea/update/${ideaUpdate._id}`,
         ideaUpdate,
         {
           headers: headers,
