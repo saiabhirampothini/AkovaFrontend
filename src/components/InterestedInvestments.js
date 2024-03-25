@@ -15,7 +15,7 @@ function InterestedInvestments() {
           "x-auth-token": localStorage.getItem("token"),
         };
 
-        let int = await axios.get("http://localhost:5000/api/invest/i", {
+        let int = await axios.get("https://akova-backend.vercel.app/api/invest/i", {
           headers: headers,
         });
         if (int.data.length === 0) {
