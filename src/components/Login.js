@@ -40,6 +40,9 @@ function Login() {
         }
       }
     }
+    else{
+      window.alert("Enter valid details");
+    }
   };
   return (
     <>
