@@ -30,7 +30,7 @@ const ProtectedRouteStudent = ({ children }) => {
           window.location.reload();
           return <Navigate to="/login" replace />;
         } else {
-          return children;
+          return true;
         }
       }
     } catch (err) {
@@ -47,7 +47,8 @@ const ProtectedRouteStudent = ({ children }) => {
     localStorage.token &&
     localStorage.getItem("profession") === "Student"
   ) {
-    fetchUser();
+    if(fetchUser())
+        return children;
   } else return <Navigate to="/login" replace />;
 };
 export default ProtectedRouteStudent;
