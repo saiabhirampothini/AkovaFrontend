@@ -31,7 +31,7 @@ const ProtectedRouteInvestor = ({ children }) => {
           window.location.reload();
           return <Navigate to="/login" replace />;
         } else {
-          return children;
+          return true;
         }
       }
     } catch (err) {
@@ -48,7 +48,8 @@ const ProtectedRouteInvestor = ({ children }) => {
     localStorage.token &&
     localStorage.getItem("profession") === "Investor"
   ) {
-    fetchUser();
+    if(fetchUser())
+        return children;
   } else return <Navigate to="/login" replace />;
 };
 export default ProtectedRouteInvestor;
