@@ -1,4 +1,5 @@
 import { Navigate } from "react-router-dom";
+import axios from "axios";
 const ProtectedRouteInvestor = ({ children }) => {
   // console.log(isLoggedIn);
 //   if (!localStorage.token) {
