@@ -122,7 +122,7 @@ function EnterprenuerView() {
                     id="btn-sumbit"
                     onClick={(e) => changeDueDate(e, problem)}
                   >
-                    Sumbit
+                    Submit
                   </button>
                 </div>
               ) : null}
