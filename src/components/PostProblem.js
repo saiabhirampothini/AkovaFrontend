@@ -102,6 +102,7 @@ function PostProblem() {
               name="title"
               value={post.title}
               onChange={handleChange}
+              required
             />
             <h5 className="mt-3">Technologies & Languages</h5>
             <div className="row">
@@ -113,6 +114,7 @@ function PostProblem() {
                   name="technologies"
                   value={post.technologies}
                   onChange={handleChange}
+                    required
                 />
               </div>
               <div className="col">
@@ -123,6 +125,7 @@ function PostProblem() {
                   name="languages"
                   value={post.languages}
                   onChange={handleChange}
+                    required
                 />
               </div>
             </div>
@@ -136,6 +139,7 @@ function PostProblem() {
                 name="domain"
                 value={post.domain}
                 onChange={handleChange}
+                  required
               />
             </div>
             <h5 className="mt-5">Description (Elaborated)</h5>
@@ -147,6 +151,7 @@ function PostProblem() {
                   name="description"
                   value={post.description}
                   onChange={handleChange}
+                    required
                 ></textarea>
               </div>
             </div>
@@ -159,6 +164,7 @@ function PostProblem() {
               name="use1"
               value={post.use1}
               onChange={handleChange}
+                required
             />
             <h5 className="mt-5">Use 2</h5>
             <input
@@ -168,6 +174,7 @@ function PostProblem() {
               name="use2"
               value={post.use2}
               onChange={handleChange}
+                required
             />
             <h5 className="mt-5">Use 3</h5>
             <input
@@ -177,6 +184,7 @@ function PostProblem() {
               name="use3"
               value={post.use3}
               onChange={handleChange}
+                required
             />
             <h5 className="mt-5">Output</h5>
             <input
@@ -186,6 +194,7 @@ function PostProblem() {
               name="output"
               value={post.output}
               onChange={handleChange}
+                required
             />
             <h5 className="mt-5">Give Image Link</h5>
             <input
@@ -195,6 +204,7 @@ function PostProblem() {
               name="image"
               value={post.image}
               onChange={handleChange}
+                required
             />
             <h5 className="mt-5">Give Git Repo Link</h5>
             <input
@@ -204,6 +214,7 @@ function PostProblem() {
               name="githubrepository"
               value={post.githubrepository}
               onChange={handleChange}
+                required
             />
             <h5 className="mt-5">Enter Due Date</h5>
             <input
@@ -213,6 +224,7 @@ function PostProblem() {
               name="dueDate"
               value={post.dueDate}
               onChange={handleChange}
+                required
             />
 
             <h3 className="mt-5">Enter your problem statement</h3>
@@ -223,6 +235,7 @@ function PostProblem() {
               name="problemStatement"
               value={post.problemStatement}
               onChange={handleChange}
+                required
             />
 
             <div className="d-flex justify-content-between mt-5 mb-5 container">
