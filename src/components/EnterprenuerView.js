@@ -116,6 +116,7 @@ function EnterprenuerView() {
                     value={newDueDate}
                     onChange={(e) => handleDate(e)}
                     id="newDueDate"
+                      required
                   />
                   <button
                     className="btn btn-success mt-1"
