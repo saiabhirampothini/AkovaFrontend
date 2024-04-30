@@ -209,8 +209,44 @@ function StudentIdeas() {
               <strong>Problem</strong>:{idea.problem.problemStatement}
             </p>
             <p style={{ wordWrap: "break-word" }}>
-              <strong>Idea Overview</strong>:{idea.overview}
+              <strong>Idea Overview</strong>:{idea.overview.slice(0,20)} ...{" "}
+                          <button
+                  type="button"
+                  className="btn text-primary"
+                  data-toggle="modal"
+                  data-target={`#myModal2${idea._id}`}
+                >
+                  View More
+                </button>
             </p>
+                    <div
+                id={`myModal2${idea._id}`}
+                className="modal fade"
+                role="dialog"
+              >
+                <div className="modal-dialog" style={{ maxWidth: "800px" }}>
+                  <div className="modal-content">
+                    <div className="modal-header d-flex justify-content-center">
+                      <h4 className="modal-title">{idea.problem.title}</h4>
+                    </div>
+                    <div className="modal-body">
+                      <h5>Idea Description</h5>
+                      <p style={{ wordWrap: "break-word" }}>
+                        {idea.overview}
+                      </p>
+                    </div>
+                    <div className="modal-footer">
+                      <button
+                        type="button"
+                        className="btn btn-default text-danger"
+                        data-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             <p style={{ wordWrap: "break-word" }}>
               <strong>Idea Description</strong>:
               <p>
