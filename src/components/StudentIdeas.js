@@ -230,7 +230,7 @@ function StudentIdeas() {
                       <h4 className="modal-title">{idea.problem.title}</h4>
                     </div>
                     <div className="modal-body">
-                      <h5>Idea Description</h5>
+                      <h5>Idea Overview</h5>
                       <p style={{ wordWrap: "break-word" }}>
                         {idea.overview}
                       </p>
