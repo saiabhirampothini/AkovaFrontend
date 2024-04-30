@@ -209,7 +209,7 @@ function StudentIdeas() {
               <strong>Problem</strong>:{idea.problem.problemStatement}
             </p>
             <p style={{ wordWrap: "break-word" }}>
-              <strong>Idea Overview</strong>:{idea.overview.slice(0,20)} ...{" "}
+              <strong>Idea Overview</strong>:{idea.overview.slice(0,10)} ...{" "}
                           <button
                   type="button"
                   className="btn text-primary"
