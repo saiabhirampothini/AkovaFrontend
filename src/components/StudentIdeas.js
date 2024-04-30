@@ -202,16 +202,16 @@ function StudentIdeas() {
         <div className="col-sm-4 mt-5" key={idea._id}>
           <div className="idea-tab px-3 py-2">
             <h3 className="text-center mb-3">{idea.problem.title}</h3>
-            <blockquote>
+            <blockquote style={{ wordWrap: "break-word" }}>
               <strong>Contributer</strong>:<em>{idea.problem.contributer}</em>
             </blockquote>
             <p>
               <strong>Problem</strong>:{idea.problem.problemStatement}
             </p>
-            <p>
+            <p style={{ wordWrap: "break-word" }}>
               <strong>Idea Overview</strong>:{idea.overview}
             </p>
-            <p>
+            <p style={{ wordWrap: "break-word" }}>
               <strong>Idea Description</strong>:
               <p>
                 {idea.description.slice(0, 20)} ...{" "}
