@@ -64,7 +64,7 @@ function Student() {
             <div className="col-sm-6">
               <div className="px-4 py-4">
                 <h2 className="h2 text-center">{problem.title}</h2>
-                <p className="prj-des-stu">{problem.description.slice(0,60)}...</p>
+                <p className="prj-des-stu">{problem.description.slice(0,200)}...</p>
                 <h4 className="h4 text-secondary">Enhances the works</h4>
                 <ol>
                   <li>{uses[0]}</li>
