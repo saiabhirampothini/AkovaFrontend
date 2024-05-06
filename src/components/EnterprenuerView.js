@@ -157,7 +157,7 @@ function EnterprenuerView() {
           </ol>
           <h5 style={{ color: "grey" }}>Output:</h5>
           <p className="des-enter-view" style={{ color: "black" }}>
-            The output of the above project is
+{problem.output}
           </p>
           <img
             src={problem.image}
