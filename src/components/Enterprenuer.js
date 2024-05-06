@@ -65,7 +65,7 @@ function Enterprenuer() {
                     {state}
                   </span>
                 </p>
-                <p className="prj-des-enter">{problem.description}</p>
+                <p className="prj-des-enter">{problem.description.slice(0,30)}...</p>
                 <p className="des-enter">Problem Statement</p>
                 <p className="prb-sta-enter">{problem.problemStatement}</p>
                 <p>
