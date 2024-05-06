@@ -120,11 +120,11 @@ function Responses() {
           <p className="sol-res" style={{ marginBottom: "0" }}>
             Solution Overview
           </p>
-          <p style={{ fontSize: "22px", marginTop: "0" }}>{idea.overview}</p>
+          <p style={{ fontSize: "22px", marginTop: "0"  ,wordWrap: "break-word"}}>{idea.overview}</p>
           <p className="sol-res" style={{ marginBottom: "0" }}>
             Description
           </p>
-          <p style={{ fontSize: "18px", marginTop: "0" }}>{idea.description}</p>
+          <p style={{ fontSize: "18px", marginTop: "0", wordWrap: "break-word" }}>{idea.description}</p>
           <p className="sol-res" style={{ marginBottom: "0" }}>
             Attachments
           </p>
