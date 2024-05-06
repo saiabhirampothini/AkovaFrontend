@@ -60,7 +60,7 @@ function StudentView() {
             <li>{uses[2]}</li>
           </ol>
           <h5>Output:</h5>
-          <p className="des">The output of the above project is</p>
+          <p className="des">{problem.output}</p>
           <img
             src={problem.image}
             alt="drone-img"
