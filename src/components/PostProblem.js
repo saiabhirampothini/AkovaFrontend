@@ -190,7 +190,7 @@ function PostProblem() {
             <input
               className="form-control"
               type="text"
-              placeholder="Give a use"
+              placeholder="Give a output how it is/should be working.."
               name="output"
               value={post.output}
               onChange={handleChange}
